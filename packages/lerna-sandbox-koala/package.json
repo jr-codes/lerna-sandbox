@@ -2,9 +2,16 @@
   "name": "lerna-sandbox-koala",
   "version": "0.0.0",
   "description": "🐨",
-  "author": "JR Shampang <jr@shampang.com>",
   "homepage": "https://github.com/jr-codes/lerna-sandbox#readme",
+  "bugs": {
+    "url": "https://github.com/jr-codes/lerna-sandbox/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jr-codes/lerna-sandbox.git"
+  },
   "license": "ISC",
+  "author": "JR Shampang <jr@shampang.com>",
   "main": "lib/index.js",
   "directories": {
     "lib": "lib"
@@ -12,14 +19,7 @@
   "files": [
     "lib"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jr-codes/lerna-sandbox.git"
-  },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
-  },
-  "bugs": {
-    "url": "https://github.com/jr-codes/lerna-sandbox/issues"
   }
 }
