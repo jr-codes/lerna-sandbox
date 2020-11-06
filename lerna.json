@@ -1,7 +1,7 @@
 {
   "command": {
     "version": {
-      "message": "chore(release): %s [skip ci]"
+      "message": "chore: %s [skip ci]"
     }
   },
   "packages": [
