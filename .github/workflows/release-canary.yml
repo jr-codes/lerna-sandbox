@@ -5,6 +5,8 @@ on:
     branches: [main]
 
 jobs:
+  env:
+    MY_VAR2: "Hello 2"
   prepare:
     runs-on: ubuntu-latest
     if: "! contains(github.event.head_commit.message, '[skip ci]')"
@@ -19,11 +21,12 @@ jobs:
         with:
           node-version: 12.x
           registry-url: https://registry.npmjs.org
-      - run: echo $MY_VAR
+      - run: echo "MY_VAR is $MY_VAR"
+      - run: echo "MY_VAR2 is $MY_VAR2"
       - run: node --version
       - run: npm whoami
       - run: npm i
       - run: npx lerna publish --force-publish --canary --yes
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-          MY_VAR: Hello 👋
+          MY_VAR: "Hello 👋"
