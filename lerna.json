@@ -1,0 +1,11 @@
+{
+  "command": {
+    "version": {
+      "message": "chore(release): %s [skip ci]"
+    }
+  },
+  "packages": [
+    "packages/*"
+  ],
+  "version": "0.0.0"
+}
